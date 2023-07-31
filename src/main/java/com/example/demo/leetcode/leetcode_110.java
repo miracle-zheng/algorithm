@@ -24,7 +24,6 @@ public class leetcode_110 {
         }
 
         public Integer getDepth(TreeNode root, Integer depth) {
-            if (result == false) return 123;
             if (root == null) return depth -1 ;
 
             Integer leftDepth = getDepth(root.left, depth + 1);
