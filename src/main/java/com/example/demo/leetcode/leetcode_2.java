@@ -32,6 +32,8 @@ public class leetcode_2 {
             if (l1Length > l2Length){
 
             }
+
+            return l1Head;
         }
     }
 
