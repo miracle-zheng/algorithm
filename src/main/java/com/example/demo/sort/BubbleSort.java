@@ -1,5 +1,7 @@
 package com.example.demo.sort;
 
+import java.util.Arrays;
+
 /**
  * 冒泡排序
  */
@@ -12,7 +14,7 @@ public class BubbleSort {
             for (int j = 0; j < array.length - i - 1; j++){
                 //如果当前比后一个数要大，则交换
                 if (array[j] > array[j+1]){
-                    //swap
+                    //交换
                     int temp = array[j];
                     array[j] = array[j+1];
                     array[j+1] = temp;
@@ -25,6 +27,6 @@ public class BubbleSort {
     public static void main(String[] args) {
         int[] array = {60,10,40,50,20,30,50,90,0,30,100};
         bubbleSort(array);
-        System.out.println(array.toString());
+        System.out.println(Arrays.toString(array));
     }
 }
